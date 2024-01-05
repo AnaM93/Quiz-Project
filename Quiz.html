@@ -34,7 +34,11 @@
             padding: 1rem;
             text-align: center;
         }
-        #options {
+
+        #score {
+            text-align: center;
+        }
+        #options, #single_button {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -50,6 +54,14 @@
         .incorrect {
             background-color: lightpink;
         }
+
+        .hide {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
     </style>
   </head>
   <body>
@@ -59,6 +71,7 @@
     </header>
 
     <main>
+    <div id="score"> Score: <span id="firstScore">0</span> / <span id="secondScore">1</span></div>
     <div id="statement">
         
     </div>
@@ -71,7 +84,7 @@
     <div id="explanation">
 
     </div>
-
+    <div id="single_button"><button id="sg_btn" name="next_question" >Next Question</button></div>
     </main>
 
   </body>
